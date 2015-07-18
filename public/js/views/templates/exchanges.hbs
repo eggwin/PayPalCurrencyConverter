@@ -1,0 +1,20 @@
+<div id="exchangesRegion">
+	<h1>Exchange Rates</h1>
+	<h4>In {{currency.base}}, latest as of {{currency.formatted}}</h4>
+	<table class="table table-striped col-md-8">
+		<thead>
+			<tr>
+				<td>Currency</td>
+				<td>Amount</td>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each currency.mappedCurrencies}}
+				<tr>
+					<td>{{@key}}</td>
+					<td>{{{this}}}</td>
+				</tr>
+			{{/each}}
+		</tbody>
+	</table>
+</div>

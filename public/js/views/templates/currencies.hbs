@@ -1,0 +1,29 @@
+<div id="currenciesRegion" class="col-md-12">
+	<form class="form-inline" id="convertForm">
+		<div class="form-group col-md-3">
+			<label for="amountToConvert">Amount</label>
+			<input type="number" class="form-control" id="amountToConvert" placeholder="Amount to Convert" />
+		</div>
+		<div class="form-group col-md-3">
+			<label for="currencyToConvertFrom">Convert From</label>
+			<select id="currencyToConvertFrom">				
+				{{#each currency.mappedCurrencies}}
+					<option>{{@key}}</option>
+				{{/each}}
+			</select>
+		</div>
+		<div class="form-group col-md-3">
+			<label for="currencyToConvertTo">Convert To</label>
+			<select id="currencyToConvertTo">
+				{{#each currency.mappedCurrencies}}
+					<option>{{@key}}</option>
+				{{/each}}
+				}
+			</select>
+		</div>
+		<div class="form-group col-md-3">
+			<button type="submit" class="btn btn-primary" id="convertNewAmount">Convert</button>
+		</div>
+	</form>
+	<h1 id="currencyResult"></h1>
+</div>

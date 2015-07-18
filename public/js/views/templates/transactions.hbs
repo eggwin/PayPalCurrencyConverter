@@ -1,0 +1,24 @@
+<div id="transactions" class="col-md-12">
+	<h1>Transaction History</h1>
+	<h3>There are {{transactions.count}} results</h3>
+	<table class="table table-striped col-md-8">
+		<thead>
+			<tr>
+				<td>Date</td>
+				<td>Description</td>
+				<td>Amount</td>
+				<td>Convert</td>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each transactions.payments}}
+				<tr>
+					<td>{{create_time}}</td>
+					<td>{{transactions.[0].description}}</td>
+					<td colspan="1">{{{transactions.[0].amount.symbol}}}{{transactions.[0].amount.total}}</td>
+					<td class="conversionDropdown">{{#dropdown ../currency.rates transactions.[0].amount.currency}}{{this}}{{/dropdown}}</td>
+				</tr>
+			{{/each}}
+		</tbody>
+	</table>
+</div>

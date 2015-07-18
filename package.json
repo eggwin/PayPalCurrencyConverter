@@ -1,0 +1,37 @@
+{
+  "name": "PayPalCurrencyConverter",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "awesomelysimplecurrencyconverter": "^0.1.0",
+    "body-parser": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "debug": "~0.7.4",
+    "entities": "^1.1.1",
+    "express": "~4.2.0",
+    "express-handlebars": "^2.0.1",
+    "moment": "^2.10.3",
+    "money": "^0.2.0",
+    "morgan": "~1.0.0",
+    "open-exchange-rates": "^0.3.0",
+    "paypal-rest-sdk": "^1.6.0",
+    "static-favicon": "~1.0.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "grunt": "~0.4.5",
+    "grunt-bootstrap": "^0.1.0",
+    "grunt-config-dir": "^0.3.2",
+    "grunt-contrib-handlebars": "~0.10.2",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-loop-mocha": "^1.1.0",
+    "grunt-nodemon": "^0.4.0",
+    "handlebars": "~3.0.3",
+    "mocha": "*",
+    "supertest": "^1.0.1"
+  }
+}
