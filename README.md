@@ -7,6 +7,10 @@ PayPal Currency Converter
 	npm install
 	grunt nodemon
 
+## Dependencies
+
+	Please see the conversion module <https://github.com/eggwin/AwesomelySimpleCurrencyConverter>
+
 ## Release History
 
 	* 0.1.0 Initial Release
