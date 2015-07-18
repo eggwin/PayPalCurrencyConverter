@@ -9,7 +9,7 @@ PayPal Currency Converter
 
 ## Dependencies
 
-	Please see the conversion module <https://github.com/eggwin/AwesomelySimpleCurrencyConverter>
+	Please see the conversion module [https://github.com/eggwin/AwesomelySimpleCurrencyConverter](https://github.com/eggwin/AwesomelySimpleCurrencyConverter)
 
 ## Release History
 
