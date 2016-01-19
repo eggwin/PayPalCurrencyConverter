@@ -133,7 +133,7 @@ router.get('/paypal/activity', function (req, res) {
 	console.log('GET call to /paypal/activity');
 	paypal.payment.list({ "count": 10 }, function (error, payment_history){
 		if(error){
-			console.error(error);
+			console.log(error.response);
 			res.send(error);
 		} else {
 			// map the symbols with the payments retrieved
@@ -149,7 +149,7 @@ router.get('/paypal/activity', function (req, res) {
 
 router.get('/paypal/currencyList', function (req, res) {
 	console.log('GET call to /paypal/currencyList');
-	var currenciesPath = path.join(__dirname, '../public/js/lib/currencies.json'),
+	var currenciesPath = path.join(__dirname, '../public/js/lib/currencies.txt'),
 		symbolsPath = path.join(__dirname, '../public/js/lib/symbols.json');
 
 	oxr.latest(function (err) {

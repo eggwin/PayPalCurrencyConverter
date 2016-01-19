@@ -4,7 +4,7 @@ define(['jquery',
 	'use strict';
 	var Payments = Backbone.Model.extend({
 		url: '/paypal/activity',
-		defaults: {}
+        defaults: {}
 	});
 	return Payments;
 });
