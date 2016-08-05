@@ -2,6 +2,9 @@
 logs
 *.log
 
+#Mac-Specific
+.DS_Store
+
 # Runtime data
 pids
 *.pid
