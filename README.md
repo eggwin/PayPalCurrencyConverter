@@ -6,6 +6,7 @@ PayPal Currency Converter
 	git clone git@github.com:eggwin/PayPalCurrencyConverter.git
 	npm install
 	grunt nodemon
+    Go to localhost:3000 to see the app in action
 
 ## Dependencies
 
@@ -13,4 +14,5 @@ PayPal Currency Converter
 
 ## Release History
 
+    * 0.1.1 writeFile bug associated with writing to .json file extension
 	* 0.1.0 Initial Release
